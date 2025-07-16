@@ -6,15 +6,15 @@
 /*   By: ichikawahikaru <ichikawahikaru@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 20:50:25 by ichikawahik       #+#    #+#             */
-/*   Updated: 2025/07/10 21:17:21 by ichikawahik      ###   ########.fr       */
+/*   Updated: 2025/07/15 21:53:45 by ichikawahik      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../fractol.h"
 
 void	img_pix_coordinate(t_img *img, int x, int y, int color)
 {
-	char	pixel;
+	char	*pixel;
 
 	pixel = img->addr + (y * img->line_size + x * (img->bpp / 8));
 	*(int *)pixel = color;
