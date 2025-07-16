@@ -13,8 +13,8 @@ SRCSB = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
 	    ft_lstmap.c
 
 NAME = libft.a
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror -target arm64-apple-macos
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
 OBJC = $(SRCS:.c=.o)
 OBJCB = $(SRCSB:.c=.o)
 RM = rm -f

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   calculate.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ichikawahikaru <ichikawahikaru@student.    +#+  +:+       +#+        */
+/*   By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 20:50:25 by ichikawahik       #+#    #+#             */
-/*   Updated: 2025/07/15 21:53:45 by ichikawahik      ###   ########.fr       */
+/*   Updated: 2025/07/16 18:37:47 by hichikaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ static void	calculate_draw_pixel(double x, double y, t_fractol *f)
 	else if (f->kind == 2)
 		iter = julia(map_r, map_i, f);
 	if (iter == f->max_iter)
-		img_pixel_coordinate(&f->img, x, y, 0x000000);
+		img_pix_coordinate(&f->img, x, y, 0x000000);
 	else
-		img_pixel_coordinate(&f->img, x, y, f->color * iter * iter);
+		img_pix_coordinate(&f->img, x, y, f->color * iter * iter);
 }
 
 void	get_fractol_image(t_fractol *f)
