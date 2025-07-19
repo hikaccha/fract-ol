@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atof.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ichikawahikaru <ichikawahikaru@student.    +#+  +:+       +#+        */
+/*   By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 19:21:29 by ichikawahik       #+#    #+#             */
-/*   Updated: 2025/07/14 20:02:16 by ichikawahik      ###   ########.fr       */
+/*   Updated: 2025/07/19 19:11:29 by hichikaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ double	ft_atof(const char *str)
 	num = 0;
 	sign = 1;
 	power = 1;
-	while ((*str > 9 && *str < 13) || *str == 32)
+	while ((*str >= 9 && *str <= 13) || *str == 32)
 		++str;
 	if (*str == '-' || *str == '+')
 	{
