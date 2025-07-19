@@ -6,7 +6,7 @@
 /*   By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 23:52:33 by ichikawahik       #+#    #+#             */
-/*   Updated: 2025/07/16 18:45:49 by hichikaw         ###   ########.fr       */
+/*   Updated: 2025/07/19 13:41:08 by hichikaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int		init_data(t_fractol *f);
 int		julia(double x, double y, t_fractol *f);
 int		mandelbrot(double x, double y, t_fractol *f);
 int		close_window(t_fractol *f);
-int		keyboad_event(int key, t_fractol *f);
+int		keyboard_event(int key, t_fractol *f);
 int		mouse_zoom(int key, int x, int y, t_fractol *f);
 int		msg_error(void);
 int		msg_julia_prm(void);

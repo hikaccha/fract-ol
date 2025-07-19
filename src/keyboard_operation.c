@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   keyboad_operation.c                                :+:      :+:    :+:   */
+/*   keyboard_operation.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ichikawahikaru <ichikawahikaru@student.    +#+  +:+       +#+        */
+/*   By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 19:57:05 by ichikawahik       #+#    #+#             */
-/*   Updated: 2025/07/15 21:53:04 by ichikawahik      ###   ########.fr       */
+/*   Updated: 2025/07/19 14:01:24 by hichikaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,6 +90,5 @@ int	keyboad_event(int key, t_fractol *f)
 	else if (key == XK_Down || key == XK_Up)
 		keyboard_move_i(key, f);
 	else if (key == 'z' || key == 'x')
-		keyboard_zoom(key, f);
-	return (0);
-}
+		keyboard_zoom(key, 
+{
