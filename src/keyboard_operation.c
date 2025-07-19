@@ -6,7 +6,7 @@
 /*   By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 19:57:05 by ichikawahik       #+#    #+#             */
-/*   Updated: 2025/07/19 14:01:24 by hichikaw         ###   ########.fr       */
+/*   Updated: 2025/07/19 14:28:14 by hichikaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ static	void	keyboard_move_i(int key, t_fractol *f)
 	}
 }
 
-int	keyboad_event(int key, t_fractol *f)
+int	keyboard_event(int key, t_fractol *f)
 {
 	if (key == XK_Escape)
 		close_window(f);
@@ -90,5 +90,6 @@ int	keyboad_event(int key, t_fractol *f)
 	else if (key == XK_Down || key == XK_Up)
 		keyboard_move_i(key, f);
 	else if (key == 'z' || key == 'x')
-		keyboard_zoom(key, 
-{
+		keyboard_zoom(key, f);
+	return (0);
+}
