@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mouse_operation.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ichikawahikaru <ichikawahikaru@student.    +#+  +:+       +#+        */
+/*   By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 19:57:27 by ichikawahik       #+#    #+#             */
-/*   Updated: 2025/07/15 21:36:51 by ichikawahik      ###   ########.fr       */
+/*   Updated: 2025/07/19 15:12:46 by hichikaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,10 @@ int	mouse_zoom(int key, int x, int y, t_fractol *f)
 	}
 	else if (key == 5)
 	{
-		f->min_r += width * (x / (double)WIDTH) / 5;
-		f->max_r -= width * (1 - x / (double)WIDTH) / 5;
-		f->min_i += height * (y / (double)HEIGHT) / 5;
-		f->max_i -= height * (1 - y / (double)HEIGHT) / 5;
+		f->min_r -= width * (x / (double)WIDTH) / 5;
+		f->max_r += width * (1 - x / (double)WIDTH) / 5;
+		f->min_i -= height * (y / (double)HEIGHT) / 5;
+		f->max_i += height * (1 - y / (double)HEIGHT) / 5;
 		if (f->max_iter > 30)
 			f->max_iter -= 2;
 	}
