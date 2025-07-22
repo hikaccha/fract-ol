@@ -6,7 +6,7 @@
 /*   By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 23:52:33 by ichikawahik       #+#    #+#             */
-/*   Updated: 2025/07/19 13:41:08 by hichikaw         ###   ########.fr       */
+/*   Updated: 2025/07/22 19:41:39 by hichikaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include <stdlib.h>
 # include <math.h>
 # include <X11/keysym.h>
-
 # include "minilibx-linux/mlx.h"
 # include "libft/libft.h"
 

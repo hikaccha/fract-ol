@@ -6,13 +6,13 @@
 /*   By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 20:50:25 by ichikawahik       #+#    #+#             */
-/*   Updated: 2025/07/16 18:37:47 by hichikaw         ###   ########.fr       */
+/*   Updated: 2025/07/22 19:13:29 by hichikaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../fractol.h"
 
-void	img_pix_coordinate(t_img *img, int x, int y, int color)
+static void	img_pix_coordinate(t_img *img, int x, int y, int color)
 {
 	char	*pixel;
 

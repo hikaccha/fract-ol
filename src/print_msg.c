@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   print_msg.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ichikawahikaru <ichikawahikaru@student.    +#+  +:+       +#+        */
+/*   By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 19:53:49 by ichikawahik       #+#    #+#             */
-/*   Updated: 2025/07/15 21:53:55 by ichikawahik      ###   ########.fr       */
+/*   Updated: 2025/07/19 18:11:12 by hichikaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int	msg_error(void)
 	ft_putendl_fd("", 2);
 	ft_putendl_fd("Usage example : ./fractol <type> <prm1*> <prm2*>", 2);
 	ft_putendl_fd(" * : Julia needs two parameters", 2);
+	ft_putendl_fd(" * : Mandelbrot does not need parameters", 2);
 	ft_putendl_fd("", 2);
 	ft_putendl_fd("[type]", 2);
 	ft_putendl_fd("  Mandelbrot  /  M", 2);
